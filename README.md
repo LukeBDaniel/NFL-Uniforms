@@ -1,6 +1,6 @@
 # NFL Uniforms Matchup Viewer
 
-Live Site: https://LukeBDaniel.github.io/NFL-Uniforms
+**Live Site:** https://LukeBDaniel.github.io/NFL-Uniforms
 
 An interactive, responsive static web application that allows users to visualize and customize matchups between NFL teams. Users can select Home and Away teams, mix and match different uniform elements (helmets, jerseys, pants, and socks), and export high-resolution images of their custom matchups.
 
