@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFL Uniform Mixer 2025</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="app-container">
+        <header class="main-header">
+            <div class="logo">
+                <h1>NFL MIXER <span class="year">2025</span></h1>
+            </div>
+            <div class="header-actions">
+                <button id="save-btn" class="action-btn" onclick="app.saveMatchupImage()">Save Image</button>
+            </div>
+        </header>
+
+        <main id="main-content">
+            <!-- Single Team View -->
+            <!-- Single View Removed -->
+
+            <!-- Matchup View -->
+            <!-- Matchup View (Default) -->
+            <section id="matchup-view" class="view-section" style="display: flex;">
+                <div class="matchup-container">
+                    <!-- Away Selectors (Left now) -->
+                    <div class="side-panel left-panel">
+                        <div class="team-header">
+                            <h2>Away</h2>
+                            <select class="matchup-team-select" data-side="away"></select>
+                        </div>
+                        <div class="mini-controls" id="away-controls"></div>
+                    </div>
+
+                    <!-- Shared Stage -->
+                    <div class="uniform-stage">
+                        <div class="stage-inner">
+                            <div class="mannequin-container">
+                                <div class="mannequin" id="away-mannequin"></div>
+                                <div class="team-name" id="away-team-name"></div>
+                                <div class="team-type">Away</div>
+                            </div>
+                            <div class="mannequin-container">
+                                <div class="mannequin" id="home-mannequin"></div>
+                                <div class="team-name" id="home-team-name"></div>
+                                <div class="team-type">Home</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Home Selectors (Right now) -->
+                    <div class="side-panel right-panel">
+                        <div class="team-header">
+                            <h2>Home</h2>
+                            <select class="matchup-team-select" data-side="home"></select>
+                        </div>
+                        <div class="mini-controls" id="home-controls"></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="data.js"></script>
+    <script src="assets.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
